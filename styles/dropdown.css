@@ -1,0 +1,27 @@
+.dropdown-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative; 
+    z-index: 2;          
+}
+  
+.dropdown-content {
+    position: relative;
+    z-index: 1;
+    max-height: 0;               
+    overflow: hidden;            
+    padding: 0;                  
+    background-color: #f4f0ea;   
+    transition: max-height 0.4s ease, padding 0.4s ease; 
+}
+  
+.dropdown-content.show {
+    max-height: 1000px;
+    padding: 1rem;
+}

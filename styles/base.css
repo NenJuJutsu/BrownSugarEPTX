@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f6f2;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+button:not(#cart-button) {
+    background-color: #d6a67a14;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+  
+  button:not(#cart-button):hover,
+  .dropdown-btn:hover {
+    background-color: #e0dcd4;
+}
