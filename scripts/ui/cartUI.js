@@ -37,6 +37,26 @@ export function updateCartUI() {
 }
 
 // Attach functions to window for onclick access
-window.increment = incrementItem;
-window.decrement = decrementItem;
-window.remove = removeFromCart;
+window.increment = function (index) {
+  incrementItem(index);
+  saveCartToStorage();
+  updateCartUI();
+};
+
+window.decrement = function (index) {
+  decrementItem(index);
+  saveCartToStorage();
+  updateCartUI();
+};
+
+window.remove = function (index) {
+  removeFromCart(index);
+  saveCartToStorage();
+  updateCartUI();
+};
+
+window.empty = function () {
+  emptyCart();
+  saveCartToStorage();
+  updateCartUI();
+};
